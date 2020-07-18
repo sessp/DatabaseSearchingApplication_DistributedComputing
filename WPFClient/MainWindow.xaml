@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPFClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="121*"/>
+            <ColumnDefinition Width="485*"/>
+            <ColumnDefinition Width="186*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="field_fname" HorizontalAlignment="Left" Height="23" Margin="100,120,0,0" TextWrapping="Wrap" Text="Firstname" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="field_lname" HorizontalAlignment="Left" Height="23" Margin="268,120,0,0" TextWrapping="Wrap" Text="Lastname" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.661,-1.094" Grid.Column="1"/>
+        <TextBox x:Name="field_actnum" HorizontalAlignment="Left" Height="23" Margin="178,179,0,0" TextWrapping="Wrap" Text="Account Number" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.189,0.371" Grid.Column="1"/>
+        <TextBox x:Name="field_pin" HorizontalAlignment="Left" Height="23" Margin="178,223,0,0" TextWrapping="Wrap" Text="PIN" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="field_bal" HorizontalAlignment="Left" Height="23" Margin="178,267,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="inputfield_index" HorizontalAlignment="Left" Height="23" Margin="206,308,0,0" TextWrapping="Wrap" Text="Index" VerticalAlignment="Top" Width="57" Grid.Column="1"/>
+        <Button x:Name="button_search" Content="Search" HorizontalAlignment="Left" Margin="206,355,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="1"/>
+        <Label x:Name="entryField" Content="Entries" Grid.Column="1" HorizontalAlignment="Left" Margin="388,331,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="output" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="35,331,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="inputfield_lastname" HorizontalAlignment="Left" Height="23" Margin="19,308,0,0" TextWrapping="Wrap" Text="Lastname" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.661,-1.094" Grid.Column="1"/>
+        <Button x:Name="button_searchLastname" Content="Search" HorizontalAlignment="Left" Margin="45,355,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click1" Grid.Column="1"/>
+        <ProgressBar x:Name="progressbar_lastnameSearch" Grid.Column="1" HorizontalAlignment="Left" Height="10" Margin="35,390,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="entryField_Copy" Content="Num Entries:" Grid.Column="1" HorizontalAlignment="Left" Margin="356,308,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
